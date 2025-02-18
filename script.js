@@ -72,7 +72,7 @@ function calculateScore() {
       score++;
     }
   }
-  document.getElementById('score').textContent = Your score is ${score} out of 5.;
+  document.getElementById('score').textContent = `Your score is ${score} out of 5.`;
   localStorage.setItem('score', score);
 }
 
@@ -87,5 +87,5 @@ renderQuestions();
 // Display the last score if available
 const lastScore = localStorage.getItem('score');
 if (lastScore !== null) {
-  document.getElementById('score').textContent = Your last score was ${lastScore} out of 5.;
+  document.getElementById('score').textContent = `Your last score was ${lastScore} out of 5.`;
 }
